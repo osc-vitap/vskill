@@ -3,6 +3,7 @@ import React from 'react';
 import {OscLogo} from './osclogo';
 import {Box} from '../styles/box';
 import {Flex} from '../styles/flex';
+import Link from "next/link";
 
 export const Footer = () => {
    return (
@@ -63,14 +64,20 @@ export const Footer = () => {
                   <Text h5>About Us</Text>
                   <Box as={'ul'} css={{gap: '$5', listStyle: 'none'}}>
                      <Box as={'li'}>
+                        <Link href="https://oscvitap.org" target='_bank'>
+
                         <Text span css={{color: '$accents8'}}>
                            Open Source Community
                         </Text>
+                        </Link>
                      </Box>
                      <Box as={'li'}>
+                        <Link href="https://vtbif.org/" target='_blank'>
+
                         <Text span css={{color: '$accents8'}}>
                            VTBIF
                         </Text>
+                        </Link>
                      </Box>
                      {/* <Box as={'li'}>
                         <Text span css={{color: '$accents8'}}>
@@ -92,24 +99,36 @@ export const Footer = () => {
                   <Text h5>Contact</Text>
                   <Box as={'ul'} css={{gap: '$5', listStyle: 'none'}}>
                      <Box as={'li'}>
+                     <Link href="https://github.com/osc-vitap" target='_bank'>
+
                         <Text span css={{color: '$accents8'}}>
                            GitHub
                         </Text>
+                        </Link>
                      </Box>
                      <Box as={'li'}>
+                     <Link href="https://discord.gg/jYvGg4VSGV" target='_bank'>
+
                         <Text span css={{color: '$accents8'}}>
                            Discord
                         </Text>
+                        </Link>
                      </Box>
                      <Box as={'li'}>
+                     <Link href="https://www.instagram.com/osc.vitap/" target='_bank'>
+
                         <Text span css={{color: '$accents8'}}>
                            Instagram
                         </Text>
+                        </Link>
                      </Box>
                      <Box as={'li'}>
+                     <Link href="https://www.linkedin.com/company/oscvitap/" target='_bank'>
+
                         <Text span css={{color: '$accents8'}}>
-                           Linkdine
+                           Linkedin
                         </Text>
+                        </Link>
                      </Box>
                   </Box>
                </Flex>

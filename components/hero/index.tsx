@@ -3,6 +3,7 @@ import React from 'react';
 import {CheckIcon} from '../icons/CheckIcon';
 import {Box} from '../styles/box';
 import {Flex} from '../styles/flex';
+import Link from 'next/link';
 
 export const Hero = () => {
    return (
@@ -86,7 +87,10 @@ Through mentorship, resilience, and strategic partnerships,<b> V-Skill </b>envis
                   }}
                   wrap={'wrap'}
                >
+                  <Link href="https://forms.gle/n82rYbAd4Ee1Fu8T6" target="_blank">
+
                   <Button>Register Now</Button>
+                  </Link>
                </Flex>
                {/* <Flex
                   wrap={'wrap'}

@@ -3,6 +3,7 @@ import React from 'react';
 import {ModalLogin} from '../modal';
 import {icons} from './icons';
 import {AcmeLogo} from './logo';
+import { DiscordLogo } from '../trial/discord';
 // import {VskillLogo} from '../../public/VSKILL_Logo.webp';
 import {useTheme as useNextTheme} from 'next-themes';
 import {useTheme} from '@nextui-org/react';
@@ -47,10 +48,10 @@ export const Nav = () => {
                <Navbar.Link  href="#">
                   Problem Statement
                </Navbar.Link>
-               <Navbar.Link  href="#Timeline" style={{scrollBehavior:'smooth'}} scroll={false}>
+               <Navbar.Link  href="#Timeline" style={{scrollBehavior:'smooth'}} >
                   Timeline
                </Navbar.Link>
-               <Navbar.Link href="#FAQs" style={{scrollBehavior:'smooth'}} scroll={false}>FAQ's</Navbar.Link>
+               <Navbar.Link href="#FAQs" style={{scrollBehavior:'smooth'}} >FAQ's</Navbar.Link>
                <Navbar.Link href="#contact">Contact Us</Navbar.Link>
             </Navbar.Content>
          </Navbar.Brand>
@@ -76,9 +77,9 @@ export const Nav = () => {
                      minWidth: '100%',
                   }}
                   target="_blank"
-                  href="https://github.com/"
+                  href="https://discord.gg/jYvGg4VSGV"
                >
-                  <GithubIcon />
+                  <DiscordLogo />
                </Link>
             </Navbar.CollapseItem>
             <Navbar.CollapseItem>
@@ -94,9 +95,12 @@ export const Nav = () => {
             {/* <ModalLogin /> */}
 
             <Navbar.Item>
+               <Link href='https://forms.gle/n82rYbAd4Ee1Fu8T6' target='_blank'>
+
                <Button auto flat href="#">
                   Register Now
                </Button>
+               </Link>
             </Navbar.Item>
             <Navbar.Item hideIn={'xs'}>
                <Link
@@ -105,9 +109,9 @@ export const Nav = () => {
                      minWidth: '100%',
                   }}
                   target="_blank"
-                  href="https://github.com/"
+                  href="https://discord.gg/jYvGg4VSGV"
                >
-                  <GithubIcon />
+                  <DiscordLogo />
                </Link>
             </Navbar.Item>
             <Navbar.Item hideIn={'xs'}>
