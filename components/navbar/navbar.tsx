@@ -11,7 +11,7 @@ import {GithubIcon} from '../icons/GithubIcon';
 
 export const Nav = () => {
    const {setTheme} = useNextTheme();
-   const {isDark, type} = useTheme();
+   const {isLight, type} = useTheme();
    const collapseItems = [
       'About',
       'Problem Statement',
@@ -84,7 +84,7 @@ export const Nav = () => {
             </Navbar.CollapseItem>
             <Navbar.CollapseItem>
                <Switch
-                  checked={false}
+                  checked={isLight}
                   onChange={(e) =>
                      setTheme(e.target.checked ? 'dark' : 'light')
                   }
@@ -116,7 +116,7 @@ export const Nav = () => {
             </Navbar.Item>
             <Navbar.Item hideIn={'xs'}>
                <Switch
-                  checked={isDark}
+                  checked={isLight}
                   onChange={(e) =>
                      setTheme(e.target.checked ? 'dark' : 'light')
                   }
