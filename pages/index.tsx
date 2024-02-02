@@ -15,11 +15,11 @@ const Home: NextPage = () => {
          <Nav />
          <Box as="main">
             <Hero />
-            <Trusted />
             {/* <Statistics /> */}
             <Plans />
-            {/* <Faq /> */}
             <Trial />
+            <Faq />
+            <Trusted />
             <Footer />
          </Box>
       </Layout>

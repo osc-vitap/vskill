@@ -7,6 +7,7 @@ import { Flex } from '../styles/flex';
 export const Plans = () => {
   return (
     <>
+    <section id='Timeline'>
       <Flex
         css={{ py: '$20', gap: '1rem', px: '$6' }}
         justify={'center'}
@@ -204,6 +205,7 @@ export const Plans = () => {
       <Divider
         css={{ position: 'absolute', inset: '0p', left: '0', mt: '$5' }}
       />
+      </section>
     </>
   );
 };

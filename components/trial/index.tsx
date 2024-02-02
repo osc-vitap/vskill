@@ -16,7 +16,7 @@ export const Trial = () => {
         direction={"column"}
         align={"center"}
       >
-        <Text h3>Help Center</Text>
+        <Text h2>Help Center</Text>
         <Text
           span
           css={{
