@@ -84,7 +84,7 @@ export const Nav = () => {
             </Navbar.CollapseItem>
             <Navbar.CollapseItem>
                <Switch
-                  checked={isDark}
+                  checked={false}
                   onChange={(e) =>
                      setTheme(e.target.checked ? 'dark' : 'light')
                   }
